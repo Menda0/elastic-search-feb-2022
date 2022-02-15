@@ -1,0 +1,15 @@
+{
+  "name": "elasticsearch-feb-2022",
+  "version": "1.0.0",
+  "description": "Training in elastic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marco Mendao",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "inquirer": "^8.2.0"
+  }
+}
