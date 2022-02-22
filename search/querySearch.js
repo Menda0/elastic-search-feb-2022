@@ -22,7 +22,9 @@ inquirer.prompt(questions).then(async answers =>{
         const {hits} = results.hits
         for(const hit of hits){
             const book = {
-                ...hit._source,
+                title: hit._source.title,
+                publisher: hit._source.publisher,
+                authors: hit._source.authors,
                 id:hit._id,
                 score:hit._score
             }
@@ -35,7 +37,3 @@ inquirer.prompt(questions).then(async answers =>{
         console.error("There is an error", e)
     }
 })
-
-// 1. With DSL Queries
-// 1.1 With leaf query clause Search book by author X
-// 1.2 With compound query clause search book by author X with Rating > Y
