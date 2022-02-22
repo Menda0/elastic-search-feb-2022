@@ -35,3 +35,7 @@ inquirer.prompt(questions).then(async answers =>{
         console.error("There is an error", e)
     }
 })
+
+// 1. With DSL Queries
+// 1.1 With leaf query clause Search book by author X
+// 1.2 With compound query clause search book by author X with Rating > Y
